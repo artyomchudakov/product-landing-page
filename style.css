@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary-1: #698da7;
+  --color-primary-white: #ffffff;
+  --color-link-hover: #feed36;
+  --color-about-background: #0f131e;
+  --color-navbar-background: rgba(15, 19, 30, 0.4);
+  --transition: all 0.3s linear;
+}
+
+body {
+  font-size: 20px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: var(--color-primary-1);
+}
+.description {
+  text-align: center;
+  vertical-align: center;
+}
+
+header {
+  min-height: 100vh;
+  background: url(images/bg_cryptohoodclub.jpg) center/cover no-repeat;
+}
+
+#header-img {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  padding: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  padding: 1rem, 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fixed-nav {
+  z-index: 1;
+  background-color: var(--color-navbar-background);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav-toggle {
+  color: var(--color-primary-white);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.25rem;
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 200px;
+}
+
+.links a {
+  color: var(--color-primary-white);
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.25rem;
+  display: block;
+  transition: var(--transition);
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.links a:hover,
+.nav-toggle:hover,
+.form a:hover {
+  color: var(--color-link-hover);
+  cursor: pointer;
+}
+
+/* social media icons */
+.social-icons {
+  display: flex;
+  justify-self: center;
+  /* order: 2; */
+  padding: 0 2rem;
+}
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: var(--color-primary-white);
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--color-link-hover);
+}
+
+/* sections and title */
+.section-container {
+  padding: 0 16px;
+}
+.section-content {
+  padding: 0 32px;
+}
+.section-content p {
+  padding: 12px 0;
+  line-height: 1.75;
+}
+
+#home,
+#about,
+#crobin-paper {
+  min-height: 80vh;
+}
+#about {
+  background-color: var(--color-about-background);
+  color: var(--color-primary-white);
+  padding-bottom: 32px;
+}
+#about .section-content:last-of-type {
+  padding: 0;
+}
+.video-content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#crobin-paper {
+  color: var(--color-primary-white);
+}
+
+#team {
+  background-color: #feed36;
+}
+#team-img {
+  max-width: 100%;
+  display: flex;
+  justify-self: flex-end;
+}
+
+#about h2,
+#crobin-paper h2,
+#team h2,
+.form h2 {
+  font-size: 3.75rem;
+  font-family: 'Atma', cursive;
+  font-weight: inherit;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-primary-white);
+}
+#team h2 {
+  color: black;
+}
+
+.form {
+  display: block;
+  margin: 16px auto;
+  text-align: center;
+  color: var(--color-primary-white);
+}
+.form h2 {
+  font-size: 32px;
+}
+.form a {
+  text-decoration: none;
+  color: var(--color-about-background);
+}
+.content-group {
+  margin: 0.5rem auto;
+  padding: 0.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input[type='email'] {
+  width: 40%;
+  margin: 0 16px 16px 16px;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid var(--color-link-hover);
+  border-right: 2px solid var(--color-link-hover);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type='email']:focus {
+  outline: none;
+}
+
+#submit {
+  width: 40%;
+  padding: 1rem 1.5rem;
+  margin: 0 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid var(--color-link-hover);
+  border-right: 2px solid var(--color-link-hover);
+  color: rgba(255, 255, 255, 0.9);
+  background-color: var(--color-about-background);
+}
+
+#submit:hover {
+  background-color: var(--color-primary-1);
+  border: 2px solid var(--color-link-hover);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-item-left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #about h2,
+  #crobin-paper h2,
+  #team h2 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+
+  .nav-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    font-size: 24px;
+    background-color: transparent;
+  }
+
+  #crobin-paper .section-container {
+    display: flex;
+  }
+  .section-content {
+    flex: 50%;
+  }
+  #crobin-paper .section-container,
+  #team .section-container {
+    padding-bottom: 0;
+  }
+  .flex-item-left {
+    flex: 40%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  .flex-item-left .hidden {
+    flex-grow: 2;
+    height: 100%;
+    display: block;
+  }
+
+  #about-crobin {
+    flex-grow: 5;
+    width: 100%;
+    max-width: 375px;
+  }
+  .flex-item-right {
+    flex: 60%;
+    align-self: center;
+    padding: 0 16px 32px 0;
+  }
+  #team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  input[type='email'] {
+    margin: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #about .section-container {
+    display: flex;
+  }
+}

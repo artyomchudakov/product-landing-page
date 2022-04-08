@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atma&family=UnifrakturMaguntia&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <nav id="nav-bar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <div class="logo-container">
+            <a href="#">
+              <img id="header-img" src="https://cryptohoodclub.com/img/logo.png"
+                alt="logo">
+            </a>
+          </div>
+          <!-- social madia links -->
+          <div class="social-links-container">
+            <ul class="social-icons">
+              <li>
+                <a href="https://twitter.com/cryptohood_club">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/DXyZwNHsQj">
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cryptohoodclub">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li><a href='#header' class="nav-link">Home</a></li>
+            <li><a href='#about' class="nav-link">About</a></li>
+            <li><a href='#crobin-paper' class="nav-link">Crobin Paper</a></li>
+            <li><a href='#team' class="nav-link">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>About</h2>
+    <div class="section-container">
+      <div class="section-content text-content">
+        <h3>Letter from Dr. Crobinsky</h3>
+        <p>My name is Dr. Crobinsky. My focus for a long time was on cryptography and
+          blockchain. I
+          spent over ten years researching how to integrate the human mind into the
+          blockchain.
+          Also, I experiment with a utility NFT collection. My goal is to build a team and
+          community
+          of intelligent, creative, and kind people. Trusting smart contracts more than
+          smart
+          people
+          was my approach for a long time.</p>
+        <p>I called that project Cryptohood Club and its residents Crobins. There will be
+          a
+          fixed
+          amount of Crobins ever minted. The total number is 13,653. They will be minted
+          for
+          +10
+          years. I hope you, guys, will build an incredible team to impact the world
+          significantly.</p>
+        <p>Best Regards,</p>
+        <p>Dr. Crobinsky</p>
+      </div>
+      <div class="section-content">
+        <div class="video-content">
+          <iframe id="video" src="https://www.youtube.com/embed/oncvb43Euc4?start=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="crobin-paper">
+    <h2>Crobin Paper</h2>
+    <div class="section-container">
+      <div class="flex-item-left">
+        <div class="hidden"></div>
+        <img id="about-crobin" src="images/about-crobin.png" alt="About crobin">
+      </div>
+      <div class="flex-item-right section-content">
+        <p>CryptoHood Club is a collection of 13,653 generative NFTs.</p>
+        <p>Each Crobin is a unique NFT that lives on the Ethereum blockchain. Each
+          Сrobin’s
+          owner
+          becomes a full member of CryptoHood Club with the right to vote for future
+          projects,
+          unique utility, content, and experiences.</p>
+        <p>There will be six rounds of NFT sales.</p>
+        <p>10,000 NFTs will be minted in 5 rounds, and each round opens new perks,
+          rewards,
+          and
+          achievements. The price of NFT will grow each round. So early you get Crobin is
+          cheaper
+          for you. Once 10,000 Crobins are minted, that will activate the CHC DAO
+          mechanism.
+        </p>
+        <p>Additional 3653 NFT will be minted one Crobin a day for ten years. 50% of sales
+          will go to
+          DAO Treasure over ten years; that’s a warranty for all of us that CHC is a
+          long-term
+          project. The Treasury fund will be used for creative ideas and projects that
+          develop our
+          Crobin ecosystem.</p>
+        <p>Our contract uses ERC721A, which makes minting optimized. As a result, the gas
+          fee for one
+          mint and five mints are nearly the same.</p>
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div>
+      <h2>team</h2>
+    </div>
+    <div class="section-container">
+      <img id="team-img" src="images/crobin-team.png" alt="crobin-team">
+    </div>
+
+  </section>
+
+
+  <div class="form">
+    <h2>More informaiton on <a href="https://cryptohoodclub.com/">cryptohoodclub</a></h2>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <div class="form-content">
+        <input type="email" id="email" name="email" placeholder="Enter your Email"
+          required />
+        <button type="submit" id="submit">submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
