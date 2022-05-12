@@ -38,7 +38,6 @@ header {
 
 ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -46,7 +45,6 @@ ul {
 nav {
   position: fixed;
   padding: 1rem, 1.5rem;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -103,9 +101,8 @@ nav {
 /* social media icons */
 .social-icons {
   display: flex;
-  justify-self: center;
-  /* order: 2; */
-  padding: 0 2rem;
+  padding: 0 40px;
+  margin-right: 35px;
 }
 .social-icons a {
   font-size: 1.5rem;
@@ -168,7 +165,6 @@ nav {
 #team-img {
   max-width: 100%;
   display: flex;
-  justify-self: flex-end;
 }
 
 #about h2,
@@ -245,6 +241,14 @@ input[type='email']:focus {
   background-color: var(--color-primary-1);
   border: 2px solid var(--color-link-hover);
   cursor: pointer;
+}
+
+.description {
+  text-align: center;
+  padding: 50px 50px 20px;
+  font-size: 60%;
+  line-height: 1.5;
+  color: var(--color-about-background);
 }
 
 @media screen and (max-width: 1024px) {
